@@ -20,9 +20,34 @@ public class Board{
     randomGen(1);
   }
 
+  // This will take care of entry manually
+  // For now let's assume one char per square
+  public void manualEntry(){
+    int i, j;
+    int c; 
+    for (i=0; i<mWidth; ++i){
+      for (j=0; j<mHeight; ++j){
+        Console.Write("[{0},{1}] : ", i, j);
+	c = int.Parse(Console.ReadLine());
+	mSquare[i,j] = (char) c;
+      }
+    }
+  }
+
+  public void printRaw(){
+    int i, j;
+
+    for (i=0; i<mWidth; ++i){
+      for (j=0; j<mHeight; ++j){
+        Console.Write("{0} ",  (int)mSquare[i, j]);
+      }
+      Console.Write("\n");
+    }
+ 
+  }
+
   public void printArr(){
-    int i;
-    int j;
+    int i, j;
 
     for (i=0; i<mWidth; ++i){
       for (j=0; j<mHeight; ++j){
@@ -31,11 +56,6 @@ public class Board{
       Console.Write("\n");
     }
   }
-
-  private char[,] mSquare;
-  private int     mWidth;
-  private int     mHeight;
-
   
   /** All the ugly work is done here
   * 0 : for captital alphabetic char
@@ -61,4 +81,7 @@ public class Board{
       }
     }
   }
+  private char[,] mSquare;
+  private int     mWidth;
+  private int     mHeight;
 }

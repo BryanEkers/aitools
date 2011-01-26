@@ -1,2 +1,2 @@
 all:
-	mcs Main.cs Board.cs
+	mcs Main.cs Board.cs 
