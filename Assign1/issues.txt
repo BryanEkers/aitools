@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Post issues here
+-------------------------------------------------------------------------------
+Wed Jan 26 19:31:39 EST 2011
+-------------------------------------------------------------------------------
+  o world must implement weights
+     x in turn, agents must have some sort of handicap. We'll see
+   o Agent must have many views to the world
+     x views in turn translate the world to appropriate data structure
+ -------------------------------------------------------------------------------
